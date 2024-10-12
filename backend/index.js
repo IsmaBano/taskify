@@ -30,7 +30,7 @@ app.get("*",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"frontend","dist","index.html"));
 })
 
-PORT=process.env.PORT;
+const PORT=process.env.PORT;
 app.listen(PORT,()=>{
     connectDB();
      console.log("Server is running");
